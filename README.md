@@ -6,7 +6,7 @@ I wanted to see what openings the current top chess players actually play the mo
 How it works:
 
 1. Parse each player's .pgn file into a CSV using python-chess (one row per game).
-2. Load the ECO opening database (move sequence → opening name) and match each game's opening moves against it to find the longest matching prefix.
+2. Load the ECO opening database (move sequence to opening name) and match each game's opening moves against it to find the longest matching prefix.
 3. I wrote two versions of the matching function, a simple linear scan first, then a faster version that buckets ECO entries by their first few moves so each game only gets compared against a small subset instead of the whole database.
 4. Save everything back out with the detected ECO code + opening name, then compare across players.
 
