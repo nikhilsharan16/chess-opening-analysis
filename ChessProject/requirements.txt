@@ -1,0 +1,5 @@
+chess
+pandas
+numpy
+matplotlib
+jupyter
